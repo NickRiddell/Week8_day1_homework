@@ -1,0 +1,6 @@
+// 1. Firstly the variable name is defined as 'Keith', this is then passed into the printName function, which attaches name to the end of a string.
+//2. The local variable within the result function supersedes the global variable defined above. 3 is therefore printed in the console.
+//3. The local variable (myAnimals = ['Ducks', 'Dogs', 'Lions'])) is again used in this function as it is defined within listAnimals. The for loop loops over the myAnimals array. So in the first instance i = 0, so the console prints 0: Ducks, because the animal at position 0 (myAnimals[0]) is Ducks. This process continues up to the number 2, as the loop continues until i is no longer < 2 (myAnimals.length).
+//4. The local variable takes supremacy in the allSuspects function, so Suspects include: Jay, Val, Harvey, Rick, is printed to the screen. However, when the console log is called outside of the function definition, the global variable has its way, so Suspect three is:Keith is shown in the console.
+//5. I don't really understand the sequence of events here. I guess because detective['name'] is defined locally, that is then fed into printName and supersedes the global variable.
+//6. As the console.log calls for murderer, not outerFunction or innerFunction, the muderer is rick! Quick! Someone grab him!
